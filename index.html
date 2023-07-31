@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A+ Quiz</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css" />
+  </head>
+  <body>
+    <div id="start-screen">
+      <h1>A+ Quiz: Test Your Knowledge with 20 Essential Questions</h1>
+      <p>
+        The A+ Quiz is a comprehensive assessment consisting of 20 questions
+        that delve into various topics related to A+ certification. This quiz is
+        designed to test your knowledge and understanding of essential concepts
+        and skills required for A+ certification. It covers a wide range of A+
+        topics, including hardware, software, troubleshooting, networking, and
+        more. By taking this quiz, you can evaluate your proficiency in A+
+        subject areas and identify areas where you may need further study.
+        Whether you are preparing for the A+ certification exam or simply
+        seeking to enhance your knowledge in the field, the A+ Quiz provides a
+        challenging and educational experience.
+      </p>
+      <button id="start-btn">Begin</button>
+    </div>
+
+    <div id="quiz-container" style="display: none">
+      <h2 id="question"></h2>
+      <ul id="choices"></ul>
+      <button id="submit-btn">Submit</button>
+      <div id="feedback" style="display: none"></div>
+      <button id="next-btn" style="display: none">Next</button>
+    </div>
+    <div id="finished-screen" style="display: none">
+      <h2>Quiz Completed!</h2>
+      <p>
+        Thank you for taking the quiz! We appreciate your participation and hope
+        that you've gained new knowledge and insights along the way. Your
+        engagement is invaluable, and we encourage you to continue exploring and
+        learning.
+      </p>
+      <p id="final-score"></p>
+      <button id="start-screen-btn" onclick="goToStartScreen()">Restart</button>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
